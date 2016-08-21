@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timestamps</title>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+    <!-- TIME JS -->
+    <script src="js/time.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script>
+        //UPDATE TIME EVERY 5 SECONDS
+        $(document).ready(function(){
+            get_time('timestamp');
+            setInterval(function(){
+                get_time('timestamp');
+            },5000);
+        });
+    </script>
+</head>
+<body>
+    <input type="text" class="timestamp"/>
+</body>
+</html>
